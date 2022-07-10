@@ -1,0 +1,17 @@
+1.data目录中为原始数据（a可为源域，b为目标域）：
+A_train.csv(feature+label)合计40k条，贷款期限为1-3年，平均贷款金额为几千至几万的中等额度信用贷款业务A训练数据
+B_train.csv(feature+label)合计4k条，贷款期限为7-30天，平均贷款金额为一千的小额短期贷款业务B训练数据
+B_test.csv(feature)为13k的业务B测试数据
+
+2.data_process.py为数据分析和预处理过程
+
+3.data_after为数据预处理后的数据
+
+4.baseline_model.py为单独使用b_train数据训练xgb模型，预测b_test数据得到的结果
+
+5.result目录下存放要提交的文件 - submission.csv：
+包含预测测试集中13k业务数据的no，以及其相对应的pred，pred是flag为1的概率值。
+
+6.Tradaboost.py是从王晋东那里copy来的
+
+7.tradaboostEp.py是用tradaboost根据我们的数据做的实验
