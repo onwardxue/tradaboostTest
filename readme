@@ -15,3 +15,5 @@ B_test.csv(feature)为13k的业务B测试数据
 6.Tradaboost.py是从王晋东那里copy来的
 
 7.tradaboostEp.py是用tradaboost根据我们的数据做的实验
+
+# 目前还有很大的问题，明天再慢慢搞
