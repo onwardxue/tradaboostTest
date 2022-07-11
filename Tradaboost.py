@@ -5,7 +5,7 @@
 # @Project : tradaboostTest
 
 # 从王晋东那里copy来的tradaboost代码，直接创建实例，用fit_prediction方法训练模型即可。（其他函数都是被训练方法调用的）
-# 这里的分类器用的是决策树分类，无法使用负的缺失值
+# 这里的分类器用的是决策树分类，无法使用负的缺失值（即不能像xgb一样用-999填充）
 
 import numpy as np
 from sklearn import tree
